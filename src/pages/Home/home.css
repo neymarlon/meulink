@@ -1,0 +1,118 @@
+.container-home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logo h1{
+    font-size: 60px;
+    color: white;
+}
+
+.logo span{
+    color: white;
+    margin-top: 14px;
+    margin-bottom: 34px;
+    font-size: 19px;
+}
+
+.area-input{
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideY 1.1s;
+}
+
+/*Animação de entrada eixoY*/
+
+@keyframes slideY {
+    from{
+        transform: translateY(150px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
+.area-input div{
+    width: 100%;
+    height: 46px;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: transform 0.1s;
+}
+
+.area-input div:hover{
+    transform: scale(1.05);
+}
+
+.area-input svg{
+    margin: 0 8px;
+}
+
+.area-input input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    height: 46px;
+    color: #FFF;
+    outline: none;
+    font-size: 18px;
+}
+
+
+.area-input input::placeholder{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.area-input button{
+    width: 100%;
+    height: 46px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-top: 8px;
+    transition: transform 0.2s;
+}
+
+.area-input button:hover{
+    transform: scale(1.05);
+}
+
+
+
+@media (max-width: 615px){
+    .logo img{
+        width: 200px;
+    }
+
+    .logo h1{
+        font-size: 40px;
+    }
+
+    .logo span{
+        font-size: 14px;
+    }
+
+    .area-input{
+        width: 85%;
+    }
+    
+}
