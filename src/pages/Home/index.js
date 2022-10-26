@@ -23,7 +23,7 @@ export default function Home() {
       saveLink('@encurtaLink', response.data)
       setLink('')
     }catch{
-      alert("Ops, algo deu errado.");
+      alert("No momento estamos intermitentes. Aguarde atualizações! :)");
       setLink('');
     }    
   }
